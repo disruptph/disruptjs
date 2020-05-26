@@ -7,7 +7,7 @@ After cloning the repo, run the commands below:
 ```sh
 yarn install
 
-yarn bootstrap
+yarn run bootstrap
 ```
 
 ## Creating New Package
@@ -52,19 +52,23 @@ in the **project directory**.
 
 Following steps will only work on `master` branch
 
-### Versioniong (Prepublish)
+### Versioniong
 
-Before publishing, we have to build and version the packages that has been updated. We could do so by running the commmand `yarn prepublish [semver keyword]`. Eg.,
+Before publishing, we have to build and version the packages that has been updated. We could do so by running the commmand `yarn run version [semver keyword]`. Eg.,
 
 ```sh
-yarn prepublish patch
+yarn run build
+
+yarn run version patch
 ```
 
 _Some of the semver keywords are: `major`, `minor`, `patch`, and `prerelease`._
 
 This command will create a new commmit with the version bump, and automatically pushes the commit to the git remote.
 
-_Note that we do have have a dryrun command: `yarn prepublish:dryrun`. When running this command, make sure to git reset the changes made by the dryrun before running the actual prepublish command._
+You may optionally not pass the semver keyword if you want to set the versions manually.
+
+_Note that we do also have a dryrun command: `yarn run version:dryrun`. When running this command, make sure to git reset the changes made by the dryrun before running the actual version command._
 
 ### Publishing
 
