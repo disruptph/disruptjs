@@ -14,5 +14,8 @@
   },
   "dependencies": {
     "json-api-normalizer": "^0.4.16"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
