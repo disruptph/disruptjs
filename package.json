@@ -10,7 +10,10 @@
     "typescript": "^3.9.3"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap && yarn build",
+    "prepublish": "yarn bootstrap && lerna version",
+    "prepublish:dryrun": "yarn prepublish --no-git-tag-version --no-push",
+    "publish": "lerna publish from-git"
   }
 }
