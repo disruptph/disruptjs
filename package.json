@@ -1,0 +1,16 @@
+{
+  "name": "disruptjs",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.0",
+    "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build"
+  }
+}
