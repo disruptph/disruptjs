@@ -1,11 +1,11 @@
-# `@disruptph/json-api-normalizer`
-
-This is basically just re-exporting the [`json-api-normalizer`](https://github.com/yury-dymov/json-api-normalizer#readme). The only difference is that this package includes a typescript type definition.
+# `@disruptph/json-api-utils`
 
 ## Usage
 
+### normalize
+
 ```js
-import normalize from '@disruptph/json-api-normalizer';
+import { normalize } from '@disruptph/json-api-utils';
 
 const jsonApiData = {
   data: {
@@ -69,6 +69,50 @@ normalize(jsonApiData);
 //         title: 'Hello World',
 //       }
 //     }
+//   }
+// }
+```
+
+### flatten
+
+```js
+import { flatten } from '@disruptph/json-api-utils';
+
+const data = {
+  1: {
+    id: '1',
+    type: 'user',
+    attributes: {
+      name: 'John Doe',
+      age: '25',
+    },
+    relationships: {
+      posts: {
+        data: [
+          {
+            id: '1',
+            type: 'post'
+          },
+          {
+            id: '2',
+            type: 'post'
+          }
+        ]
+      }
+    }
+  }
+};
+
+flatten(data);
+
+// Result:
+// {
+//   1: {
+//     id: '1',
+//     type: 'user',
+//     name: 'John Doe',
+//     age: '25',
+//     posts: ['1', '2'],
 //   }
 // }
 ```

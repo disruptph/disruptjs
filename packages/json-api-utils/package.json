@@ -1,0 +1,29 @@
+{
+  "name": "@disruptph/json-api-utils",
+  "version": "0.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/disruptph/disruptjs/tree/master/packages/json-api-utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:disruptph/disruptjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/disruptph/disruptjs/issues"
+  },
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@disruptph/json-api-normalizer": "^1.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
