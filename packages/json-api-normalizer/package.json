@@ -2,6 +2,14 @@
   "name": "@disruptph/json-api-normalizer",
   "version": "1.0.1",
   "license": "MIT",
+  "homepage": "https://github.com/disruptph/disruptjs/tree/master/packages/json-api-normalizer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:disruptph/disruptjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/disruptph/disruptjs/issues"
+  },
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
