@@ -16,6 +16,8 @@ yarn run bootstrap
 npx lerna create @disruptph/[package_name]
 ```
 
+Alternatively, you could also manually create a new package directory under `packages/`, and run `npm init` inside the new package directory.
+
 ## Testing a Package on Another Project
 
 First, you have to `cd` into the package you want to use on another project, and create a symlink using `yarn link`
