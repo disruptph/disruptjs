@@ -18,10 +18,13 @@
     "lib"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build:watch": "tsc -w"
   },
   "dependencies": {
-    "@disruptph/json-api-normalizer": "^1.1.0"
+    "@disruptph/json-api-normalizer": "^1.1.0",
+    "@types/qs": "^6.9.1",
+    "qs": "^6.9.1"
   },
   "publishConfig": {
     "access": "public"

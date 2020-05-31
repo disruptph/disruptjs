@@ -4,10 +4,24 @@
 
 After cloning the repo, run the commands below:
 
+Setup yarn workspace
+
+```js
+yarn config set workspaces-experimental true
+```
+
+Install dependencies
+
 ```sh
 yarn install
 
 yarn run bootstrap
+```
+
+Build when theres changes
+
+```sh
+yarn run build:watch
 ```
 
 ## Creating New Package
