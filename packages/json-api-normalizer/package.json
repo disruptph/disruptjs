@@ -18,7 +18,8 @@
     "lib"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build:watch": "tsc -w"
   },
   "dependencies": {
     "json-api-normalizer": "^0.4.16"
