@@ -12,8 +12,7 @@
   "scripts": {
     "build": "lerna run build",
     "bootstrap": "lerna bootstrap && yarn run build",
-    "version": "lerna version",
-    "version:dryrun": "yarn run version --no-git-tag-version --no-push",
-    "publish": "lerna publish from-git"
+    "publish:dryrun": "lerna version --conventional-commits --yes --no-git-tag-version --no-push --allowBranch",
+    "publish": "lerna publish from-git --conventional-commits --yes"
   }
 }

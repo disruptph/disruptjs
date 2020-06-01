@@ -50,32 +50,20 @@ yarn unlink @disruptph/json-api-normalizer
 
 in the **project directory**.
 
-## Publish Steps
+## Publishing
 
-Following steps will only work on `master` branch
-
-### Versioniong
-
-Before publishing, we have to build and version the packages that has been updated. We could do so by running the commmand `yarn run version [semver keyword]`. Eg.,
-
-```sh
-yarn run build
-
-yarn run version patch
-```
-
-_Some of the semver keywords are: `major`, `minor`, `patch`, and `prerelease`._
-
-This command will create a new commmit with the version bump, and automatically pushes the commit to the git remote.
-
-You may optionally not pass the semver keyword if you want to set the versions manually.
-
-_Note that we do also have a dryrun command: `yarn run version:dryrun`. When running this command, make sure to git reset the changes made by the dryrun before running the actual version command._
-
-### Publishing
-
-After the versioning, you may now publish the packages using the command below:
+Do note that we use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to automatically bump version and create changelogs. So please do note of that when writing a commit message.
 
 ```sh
 yarn run publish
+```
+
+_Note: The command is restricted to run only on `master` branch._
+
+### Dryrun
+
+We also have a dryrun command `yarn run publish:dryrun [branch_name]`. Eg.
+
+```sh
+yarn run publish:dryrun new-feat
 ```
