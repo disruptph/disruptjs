@@ -1,0 +1,32 @@
+{
+  "name": "@disruptph/hygen-redux-generators",
+  "version": "1.0.0",
+  "description": "React/Redux template file generators",
+  "keywords": [
+    "generator"
+  ],
+  "author": "vinchi777 <judecalimbas@gmail.com>",
+  "homepage": "https://github.com/disruptph/disruptjs#readme",
+  "license": "ISC",
+  "main": "lib/hygen-redux-generators.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disruptph/disruptjs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/disruptph/disruptjs/issues"
+  }
+}
