@@ -1,6 +1,6 @@
 {
   "name": "@disruptph/hygen-redux-generators",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React/Redux template file generators",
   "keywords": [
     "generator"
