@@ -67,6 +67,9 @@ in the **project directory**.
 ## Publishing
 
 Do note that we use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to automatically bump version and create changelogs. So please do note of that when writing a commit message.
+ex.  
+fix: a commit of the type fix patches a bug in your codebase (this correlates with PATCH in semantic versioning).
+feat: a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in semantic versioning).
 
 ```sh
 yarn run publish
