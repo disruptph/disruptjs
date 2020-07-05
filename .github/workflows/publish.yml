@@ -17,6 +17,8 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12.x
+    - name: Set Auth Token
+      run: yarn config set '//registry.npmjs.org/:_authToken' $NPM_TOKEN
     - name: Install Dependencies
       run: yarn install
     - name: Build
