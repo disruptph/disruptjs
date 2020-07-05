@@ -66,13 +66,9 @@ in the **project directory**.
 
 ## Publishing
 
-Do note that we use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to automatically bump version and create changelogs. So please do note of that when writing a commit message.
+Do note that we use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to automatically bump versions and create changelogs. So please keep that in mind when writing a commit message.
 
-```sh
-yarn run publish
-```
-
-_Note: The command is restricted to run only on `master` branch._
+Once your Pull Request is merged, it will automatically publish any updated packages via Github Action.
 
 ### Dryrun
 
