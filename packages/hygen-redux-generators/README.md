@@ -7,13 +7,12 @@ File generators for react and redux to speed up front end development.
 ## Install
 
 ```
-yarn add hygen --dev
-yarn add @disruptph/hygen-redux-generators --dev
+yarn global add hygen @disruptph/hygen-redux-generators
 
-npx hygen-redux-init
+hygen-redux-init
 ```
 
-You might want to gitignore created templates from `npx hygen-redux-init`
+You might want to gitignore created templates from `hygen-redux-init`
 
 ```
 //.gitingore
@@ -24,7 +23,8 @@ _templates
 
 ```
 // entity name should be in camel case ang singularize
-npx hygen entity new sampleName
+
+hygen entity new sampleName
 ```
 
 
