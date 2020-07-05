@@ -1,0 +1,25 @@
+name: Publish to NPM
+
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - 'packages/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Install Dependencies
+      run: yarn install
+    - name: Build
+      run: yarn run bootstrap
+    - name: Publish
+      run: yarn run publish
