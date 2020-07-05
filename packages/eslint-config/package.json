@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-disruptph",
+  "version": "1.0.0",
+  "description": "ESLint Config",
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "Naoya Ono <ono.naoyaa@gmail.com>",
+  "homepage": "https://github.com/disruptph/disruptjs/tree/master/packages/eslint-config#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disruptph/disruptjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/disruptph/disruptjs/issues"
+  },
+  "peerDependencies": {
+    "eslint": ">=6"
+  }
+}
