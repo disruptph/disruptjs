@@ -10,8 +10,6 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    env:
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
@@ -22,6 +20,8 @@ jobs:
         scope: '@disruptph'
     - name: Install Dependencies
       run: yarn install
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     - name: Build
       run: yarn run bootstrap
     - run: |
@@ -29,3 +29,5 @@ jobs:
         git config user.email "github-action@users.noreply.github.com"
     - name: Publish
       run: yarn run publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
