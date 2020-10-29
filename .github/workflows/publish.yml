@@ -10,17 +10,18 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    env:
-      NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
+        always-auth: true
         node-version: 12.x
-    - name: Set Auth Token
-      run: yarn config set '//registry.npmjs.org/:_authToken' $NPM_TOKEN
+        registry-url: https://registry.npmjs.org
+        scope: '@disruptph'
     - name: Install Dependencies
       run: yarn install
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     - name: Build
       run: yarn run bootstrap
     - name: Publish
