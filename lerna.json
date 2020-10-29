@@ -10,7 +10,8 @@
       "ignoreChanges": ["*.md"]
     },
     "version": {
-      "allowBranch": ["master"]
+      "allowBranch": ["master"],
+      "message": "chore(release): publish"
     }
   }
 }
