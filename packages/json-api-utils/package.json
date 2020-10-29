@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@disruptph/json-api-normalizer": "^1.2.2",
-    "@types/qs": "^6.9.1",
+    "@types/qs": "^6.9.5",
     "qs": "^6.9.1"
   },
   "publishConfig": {
