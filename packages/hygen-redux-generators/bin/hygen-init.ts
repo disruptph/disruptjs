@@ -1,18 +1,17 @@
 #!/usr/bin/env node
 
 import chalk from 'chalk'
-import execa from 'execa'
 import fs from 'fs-extra'
 import inquirer from 'inquirer'
 import L from 'lodash'
 import ora from 'ora'
 import path from 'path'
-import parser from 'yargs-parser'
+import parser, { Arguments } from 'yargs-parser'
 import URL from 'url'
 
 const help = `Please specify a package to add.
 
-$ hygen-add PACKAGE [--name NAME] [--prefix PREFIX] 
+$ hygen-add PACKAGE [--name NAME] [--prefix PREFIX]
 
   PACKAGE: npm module or Git repository
            - note: for an npm module named 'hygen-react', PACKAGE is 'react'
@@ -20,17 +19,16 @@ $ hygen-add PACKAGE [--name NAME] [--prefix PREFIX]
  --prefix: prefix added generators, avoids clashing names (optional)
 `
 
-const tmpl = x => path.join('_templates', x)
+const tmpl = (x: string) => path.join('_templates', x)
 const pkgName = '@disruptph/hygen-redux-generators'
 
-const resolvePackage = (pkg, opts) => {
+const resolvePackage = (pkg: string, opts: Arguments) => {
   if (pkg.match(/^(http|git\+ssh)/)) {
     if (opts.name) {
       return { name: opts.name, isUrl: true }
     }
     return { name: L.last(URL.parse(pkg).path.split('/')), isUrl: true }
   }
-  //return { name: `${pkg}`, isUrl: false }
   return { name: pkgName, isUrl: false }
 }
 
@@ -46,13 +44,7 @@ const main = async () => {
   const spinner = ora(`Adding: ${name}`).start()
 
   try {
-    //await execa.shell(
-      //`${path.join(__dirname, '../node_modules/.bin/')}yarn add --dev ${
-        //isUrl ? pkg : name
-      //}`
-    //)
     const templatePath = path.join('./node_modules', name, '_templates')
-    const exists = await fs.pathExists(templatePath)
     await fs.mkdirp('_templates')
 
     spinner.stop()

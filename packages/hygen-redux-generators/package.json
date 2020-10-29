@@ -10,8 +10,7 @@
   "license": "ISC",
   "main": "lib/hygen-redux-generators.js",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
@@ -24,9 +23,8 @@
     "url": "git+https://github.com/disruptph/disruptjs.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "rimraf ./lib && tsc",
-    "build:watch": "tsc -w"
+    "build:watch": "rimraf ./lib && tsc -w"
   },
   "bin": {
     "hygen-redux-init": "./lib/hygen-init.js"
@@ -51,9 +49,6 @@
     "@types/lodash": "^4.14.102",
     "@types/node": "^9.4.4",
     "@types/ora": "^1.3.1",
-    "hygen": "^6.0.3",
-    "hygen-test-package": "^0.0.2",
-    "tslint-config-prettier": "^1.7.0",
-    "typescript": "^2.8.1"
+    "hygen": "^6.0.3"
   }
 }
