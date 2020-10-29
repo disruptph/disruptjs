@@ -1,0 +1,41 @@
+{
+  "name": "@disruptph/react-auth-context",
+  "version": "1.0.0",
+  "description": "A generic react auth context",
+  "keywords": [
+    "react",
+    "auth",
+    "auth context"
+  ],
+  "author": "Naoya Ono <ono.naoyaa@gmail.com>",
+  "homepage": "https://github.com/disruptph/disruptjs/tree/master/packages/react-auth-context#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disruptph/disruptjs.git"
+  },
+  "scripts": {
+    "build": "rimraf ./lib && tsc",
+    "build:watch": "rimraf ./lib && tsc -w"
+  },
+  "bugs": {
+    "url": "https://github.com/disruptph/disruptjs/issues"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8",
+    "react": "^16.8"
+  }
+}
