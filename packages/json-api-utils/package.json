@@ -1,6 +1,6 @@
 {
   "name": "@disruptph/json-api-utils",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "license": "MIT",
   "homepage": "https://github.com/disruptph/disruptjs/tree/master/packages/json-api-utils#readme",
   "repository": {
@@ -22,7 +22,7 @@
     "build:watch": "tsc -w"
   },
   "dependencies": {
-    "@disruptph/json-api-normalizer": "^1.2.5",
+    "@disruptph/json-api-normalizer": "^1.2.6",
     "@types/qs": "^6.9.5",
     "qs": "^6.9.1"
   },
