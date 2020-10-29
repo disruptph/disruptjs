@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/disruptph/disruptjs/compare/@disruptph/hygen-redux-generators@1.0.3...@disruptph/hygen-redux-generators@1.1.0) (2020-10-29)
+
+
+### Bug Fixes
+
+* update readme ([905c851](https://github.com/disruptph/disruptjs/commit/905c8518159d34696c8b533bd71bd9bc6e7ea62f))
+
+
+### Features
+
+* add templates ([4201e20](https://github.com/disruptph/disruptjs/commit/4201e20cc92c4b783a5ebc70af4e5b3199b042b6))
+
+
+
+
+
 ## [1.0.3](https://github.com/disruptph/disruptjs/compare/@disruptph/hygen-redux-generators@1.0.1...@disruptph/hygen-redux-generators@1.0.3) (2020-07-03)
 
 
