@@ -1,5 +1,7 @@
 # `@disruptph/react-auth-context`
 
+Generic react auth context
+
 ## Usage
 
 ### Typescript/React Example
