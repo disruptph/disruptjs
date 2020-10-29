@@ -22,7 +22,7 @@
     "build:watch": "tsc -w"
   },
   "dependencies": {
-    "json-api-normalizer": "^0.4.16"
+    "json-api-normalizer": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"
