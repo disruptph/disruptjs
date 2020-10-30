@@ -71,7 +71,6 @@ ex.
 fix: a commit of the type fix patches a bug in your codebase (this correlates with PATCH in semantic versioning).
 feat: a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in semantic versioning).
 
-
 Once your Pull Request is merged, it will automatically publish any updated packages via Github Action.
 
 ### Dryrun

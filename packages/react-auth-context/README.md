@@ -25,7 +25,7 @@ class MyAuthService implements AuthService {
 }
 
 const App = () => (
-  <AuthProvider authService={new MyAuthService()}>
+  <AuthProvider service={new MyAuthService()}>
     <Login />
   </AuthProvider>
 );
