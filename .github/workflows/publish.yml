@@ -2,11 +2,8 @@ name: Publish to NPM
 
 on:
   push:
-    # temporarily disable action
-    branches-ignore:
-      - '**'
-    # branches:
-    # - master
+    branches:
+    - master
     paths:
     - 'packages/**'
 
