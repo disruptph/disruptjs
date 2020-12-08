@@ -18,6 +18,9 @@
     "url": "https://github.com/disruptph/disruptjs/issues"
   },
   "peerDependencies": {
-    "eslint": ">=6"
+    "@typescript-eslint/eslint-plugin": ">=4.9",
+    "eslint": ">=6",
+    "eslint-plugin-react": ">=7.11",
+    "eslint-plugin-react-hooks": ">=4.2"
   }
 }
