@@ -7,10 +7,12 @@
   ],
   "command": {
     "publish": {
+      "conventionalCommits": true,
       "ignoreChanges": ["*.md"]
     },
     "version": {
       "allowBranch": ["master"],
+      "conventionalCommits": true,
       "message": "chore(release): publish"
     }
   }
