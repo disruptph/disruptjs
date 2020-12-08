@@ -1,0 +1,42 @@
+{
+  "name": "@disruptph/multer-minio-storage-engine",
+  "version": "0.0.0",
+  "description": "Multer Storage Engine for Minio",
+  "keywords": [
+    "minio",
+    "multer",
+    "storage engine"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disruptph/disruptjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/disruptph/disruptjs/issues"
+  },
+  "author": "Naoya Ono <ono.naoyaa@gmail.com>",
+  "homepage": "https://github.com/disruptph/disruptjs/tree/master/packages/multer-minio-storage-engine#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf ./lib && tsc",
+    "build:watch": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/minio": "^7.0.6",
+    "@types/multer": "^1.4.5",
+    "express": "^4.17.1",
+    "minio": "^7.0.17",
+    "multer": "^1.4.2"
+  }
+}
