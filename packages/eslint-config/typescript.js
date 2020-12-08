@@ -6,6 +6,7 @@ module.exports = {
       plugins: ['@typescript-eslint'],
       rules: {
         camelcase: 'off',
+        'no-undef': 'off',
         'no-unused-vars': 'off',
         'no-useless-constructor': 'off',
         semi: 'off',
@@ -26,6 +27,10 @@ module.exports = {
             "selector": "property",
             "format": ["camelCase", "PascalCase", "snake_case"],
             "leadingUnderscore": "allow"
+          },
+          {
+            "selector": "typeProperty",
+            "format": ["camelCase", "PascalCase"],
           },
           {
             "selector": "parameter",
