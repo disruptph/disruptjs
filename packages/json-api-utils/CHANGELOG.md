@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.8 (2020-12-08)
+
+**Note:** Version bump only for package @disruptph/json-api-utils
+
+
+
+
+
 ## 1.1.7 (2020-10-30)
 
 **Note:** Version bump only for package @disruptph/json-api-utils
