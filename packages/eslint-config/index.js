@@ -19,7 +19,7 @@ module.exports = {
     'no-template-curly-in-string': 'error',
 
     // Best Practices
-    curly: 'error',
+    curly: ['error', 'multi-line'],
     // 'default-param-last': 'error', /* Needs eslint 6.4 higher */
     'dot-location': ['error', 'property'],
     'no-case-declarations': 'off',

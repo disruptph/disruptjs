@@ -51,7 +51,7 @@ module.exports = {
           }
         ],
         '@typescript-eslint/member-delimiter-style': 'error',
-        '@typescript-eslint/no-empty-function': 'error',
+        '@typescript-eslint/no-empty-function': ['error', { allow: ['arrowFunctions'] }],
         '@typescript-eslint/no-explicit-any': 'warn',
         '@typescript-eslint/no-extraneous-class': 'error',
         '@typescript-eslint/no-unused-vars': ['error', {
