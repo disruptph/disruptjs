@@ -10,45 +10,46 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-useless-constructor': 'off',
         semi: 'off',
-        '@typescript-eslint/naming-convention': ['error',
+        '@typescript-eslint/naming-convention': [
+          'error',
           {
-            "selector": "default",
-            "format": ["camelCase"]
+            selector: 'default',
+            format: ['camelCase'],
           },
           {
-            "selector": "variable",
-            "format": ["camelCase", "PascalCase", "UPPER_CASE"]
+            selector: 'variable',
+            format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
           },
           {
-            "selector": "function",
-            "format": ["camelCase", "PascalCase"]
+            selector: 'function',
+            format: ['camelCase', 'PascalCase'],
           },
           {
-            "selector": "property",
-            "format": ["camelCase", "PascalCase", "snake_case"],
-            "leadingUnderscore": "allow"
+            selector: 'property',
+            format: ['camelCase', 'PascalCase', 'snake_case'],
+            leadingUnderscore: 'allow',
           },
           {
-            "selector": "typeProperty",
-            "format": ["camelCase", "PascalCase"],
+            selector: 'typeProperty',
+            format: ['camelCase', 'PascalCase'],
           },
           {
-            "selector": "parameter",
-            "format": ["camelCase", "PascalCase"],
-            "leadingUnderscore": "allow"
+            selector: 'parameter',
+            format: ['camelCase', 'PascalCase'],
+            leadingUnderscore: 'allow',
           },
           {
-            "selector": "method",
-            "format": ["camelCase", "UPPER_CASE"]
+            selector: 'method',
+            format: ['camelCase', 'UPPER_CASE'],
           },
           {
-            "selector": "enumMember",
-            "format": ["PascalCase"]
+            selector: 'enumMember',
+            format: ['PascalCase'],
           },
           {
-            "selector": "typeLike",
-            "format": ["PascalCase"]
-          }
+            selector: 'typeLike',
+            format: ['PascalCase'],
+          },
         ],
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/no-empty-function': ['error', { allow: ['arrowFunctions'] }],
@@ -61,6 +62,6 @@ module.exports = {
         '@typescript-eslint/semi': 'error',
         '@typescript-eslint/type-annotation-spacing': 'error',
       },
-    }
+    },
   ],
 };

@@ -31,6 +31,7 @@ export class MinioStorage implements StorageEngine {
     this.getFilename = getFilename;
   }
 
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   _handleFile = async (
     _: Request,
     file: Express.Multer.File,
@@ -54,6 +55,7 @@ export class MinioStorage implements StorageEngine {
     }
   };
 
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   _removeFile = () => {
     // TODO
   };
