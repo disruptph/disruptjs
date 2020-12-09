@@ -35,7 +35,15 @@ const clearData = () => {
   localStorage.removeItem([prefix, 'client'].join('_'));
 };
 
-const setData = ({ token, uid, client }: { token: string; uid: string; client: string; }) => {
+const setData = ({
+  token,
+  uid,
+  client,
+}: {
+  token: string;
+  uid: string;
+  client: string;
+}) => {
   const prefix = localStorage.getItem('prefix');
 
   localStorage.setItem([prefix, 'token'].join('_'), token);

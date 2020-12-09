@@ -1,5 +1,5 @@
 import qs from 'qs';
-import {UserAuth} from '../userAuth';
+import { UserAuth } from '../userAuth';
 
 const defaultOptions = {
   showAlerts: false,
@@ -7,6 +7,7 @@ const defaultOptions = {
   headers: {},
 };
 
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class
 class RestClient {
   static post = async (url: string, body = {}, options: any = defaultOptions) => {
     try {
@@ -67,7 +68,7 @@ class RestClient {
   static get = async <R = any>(
     url: string,
     query = {},
-      options?: RequestInit
+    options?: RequestInit
   ): Promise<R> => {
     try {
       if (Object.keys(query).length > 0) {

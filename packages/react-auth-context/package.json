@@ -25,6 +25,7 @@
     "url": "git+https://github.com/disruptph/disruptjs.git"
   },
   "scripts": {
+    "lint": "eslint --ext .ts,.tsx .",
     "build": "rimraf ./lib && tsc",
     "build:watch": "rimraf ./lib && tsc -w"
   },

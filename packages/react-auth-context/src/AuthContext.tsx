@@ -33,9 +33,9 @@ export const AuthConsumer = AuthContext.Consumer;
 export const useAuth = () => {
   const auth = useContext(AuthContext);
   if (!auth) throw new Error('useAuth requires <AuthProvider>');
-  auth.logout
+  auth.logout;
   return auth;
-}
+};
 
 interface Props {
   service: AuthService;
@@ -60,12 +60,12 @@ export const AuthProvider: FC<Props> = ({ children, service }) => {
     } finally {
       setIsLoggingIn(false);
     }
-  }
+  };
 
   const logout = async () => {
     await service.logout();
     setUser(null);
-  }
+  };
 
   return (
     <AuthContext.Provider
@@ -80,4 +80,4 @@ export const AuthProvider: FC<Props> = ({ children, service }) => {
       {children}
     </AuthContext.Provider>
   );
-}
+};

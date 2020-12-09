@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/disruptph/disruptjs/issues"
   },
+  "scripts": {
+    "lint": "eslint ."
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=4.9",
     "eslint": ">=6",
