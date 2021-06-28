@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.10](https://github.com/disruptph/disruptjs/compare/@disruptph/json-api-utils@1.1.9...@disruptph/json-api-utils@1.1.10) (2021-06-28)
+
+
+### Bug Fixes
+
+* **json-api-utils:** allow undefined relationships ([4a08ff1](https://github.com/disruptph/disruptjs/commit/4a08ff149ea5799f975f29aa59b0337dd028c8c9))
+
+
+
+
+
 ## 1.1.9 (2020-12-09)
 
 **Note:** Version bump only for package @disruptph/json-api-utils
