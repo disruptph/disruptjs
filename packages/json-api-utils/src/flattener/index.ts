@@ -18,7 +18,7 @@ export interface FlatEntities<A extends Attributes = Attributes> {
 export const flatten = <A extends Attributes = Attributes>(
   normalizedData: NormalizedData<A>
 ): FlatEntities<A> => Object.keys(normalizedData).reduce((transformed, entityId) => {
-    const { attributes, relationships, id, type } = normalizedData[entityId];
+    const { attributes, relationships = {}, id, type } = normalizedData[entityId];
 
     const associated = Object.keys(relationships).reduce((associated, entity) => {
       const { data } = relationships[entity];
