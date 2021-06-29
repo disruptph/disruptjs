@@ -2,11 +2,8 @@ name: Publish to NPM
 
 on:
   push:
-    # temporarily disable action
-    branches-ignore:
-    - '**'
-    # branches:
-    # - master
+    branches:
+    - master
     paths:
     - 'packages/**'
 
@@ -15,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - uses: actions/setup-node@v1
       with:
         always-auth: true
