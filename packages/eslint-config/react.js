@@ -39,6 +39,7 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     'react/no-unused-state': 'error',
     'react/prop-types': ['warn', { ignore: ['children', 'className'] }],
+    'react/react-in-jsx-scope': 'off',
     'react/style-prop-object': 'error',
     'react/self-closing-comp': 'error',
     'react/void-dom-elements-no-children': 'error',
