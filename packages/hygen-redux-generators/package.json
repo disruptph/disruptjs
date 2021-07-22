@@ -37,14 +37,14 @@
     "chalk": "^4.1.0",
     "fs-extra": "^9.0.1",
     "inquirer": "^7.3.3",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "ora": "^5.1.0",
     "yargs-parser": "^20.2.3"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.2",
     "@types/inquirer": "^7.3.1",
-    "@types/lodash": "^4.14.163",
+    "@types/lodash": "^4.14.171",
     "@types/node": "^16.4.0",
     "@types/yargs-parser": "^15.0.0",
     "hygen": "^6.0.4"
