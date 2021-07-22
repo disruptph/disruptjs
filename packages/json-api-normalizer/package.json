@@ -24,7 +24,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "json-api-normalizer": "^1.0.0"
+    "json-api-normalizer": "^1.0.4"
   },
   "publishConfig": {
     "access": "public"
