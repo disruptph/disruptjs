@@ -20,10 +20,11 @@
   "scripts": {
     "lint": "eslint --ext .ts .",
     "build": "rimraf ./lib && tsc",
-    "build:watch": "tsc -w"
+    "build:watch": "tsc -w",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "json-api-normalizer": "^1.0.0"
+    "json-api-normalizer": "^1.0.4"
   },
   "publishConfig": {
     "access": "public"

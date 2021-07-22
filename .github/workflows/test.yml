@@ -1,0 +1,29 @@
+
+name: Feature Branch Tests
+
+on:
+  push:
+    branches-ignore:
+    - master
+    paths:
+    - 'packages/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 14
+        cache: 'yarn'
+    - name: Install Dependencies
+      run: |
+        yarn config set workspaces-experimental true
+        yarn install
+        yarn run bootstrap
+    - name: Run Lint
+      run: yarn run lint
+    - name: Run Typecheck
+      run: yarn run typecheck

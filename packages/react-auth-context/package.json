@@ -27,7 +27,8 @@
   "scripts": {
     "lint": "eslint --ext .ts,.tsx .",
     "build": "rimraf ./lib && tsc",
-    "build:watch": "rimraf ./lib && tsc -w"
+    "build:watch": "rimraf ./lib && tsc -w",
+    "typecheck": "tsc --noEmit"
   },
   "bugs": {
     "url": "https://github.com/disruptph/disruptjs/issues"
@@ -36,7 +37,7 @@
     "react": "^16.8 || ^17.0"
   },
   "devDependencies": {
-    "@types/react": "^16.8",
-    "react": "^16.8"
+    "@types/react": "^17.0.14",
+    "react": "^17.0.2"
   }
 }

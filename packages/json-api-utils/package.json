@@ -20,12 +20,13 @@
   "scripts": {
     "lint": "eslint --ext .ts .",
     "build": "rimraf ./lib && tsc",
-    "build:watch": "tsc -w"
+    "build:watch": "tsc -w",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@disruptph/json-api-normalizer": "^1.2.9",
-    "@types/qs": "^6.9.5",
-    "qs": "^6.9.1"
+    "@types/qs": "^6.9.7",
+    "qs": "^6.10.1"
   },
   "publishConfig": {
     "access": "public"
