@@ -30,7 +30,8 @@
   "scripts": {
     "lint": "eslint --ext .ts .",
     "build": "rimraf ./lib && tsc",
-    "build:watch": "tsc -w"
+    "build:watch": "tsc -w",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",

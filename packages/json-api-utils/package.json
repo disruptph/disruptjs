@@ -20,7 +20,8 @@
   "scripts": {
     "lint": "eslint --ext .ts .",
     "build": "rimraf ./lib && tsc",
-    "build:watch": "tsc -w"
+    "build:watch": "tsc -w",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@disruptph/json-api-normalizer": "^1.2.9",

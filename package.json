@@ -26,6 +26,7 @@
   "scripts": {
     "lint": "lerna run lint",
     "build": "lerna run build",
+    "typecheck": "lerna run typecheck",
     "build:watch": "lerna run --parallel build:watch",
     "bootstrap": "lerna bootstrap && yarn run build",
     "publish:dryrun": "lerna version --yes --no-git-tag-version --no-push --allowBranch",
