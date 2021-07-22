@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.10](https://github.com/disruptph/disruptjs/compare/@disruptph/json-api-normalizer@1.2.9...@disruptph/json-api-normalizer@1.2.10) (2021-07-22)
+
+**Note:** Version bump only for package @disruptph/json-api-normalizer
+
+
+
+
+
 ## 1.2.9 (2020-12-09)
 
 **Note:** Version bump only for package @disruptph/json-api-normalizer
