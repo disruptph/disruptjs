@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/disruptph/disruptjs/compare/@disruptph/react-auth-context@1.1.8...@disruptph/react-auth-context@2.0.0) (2023-08-04)
+
+
+### chore
+
+* **react-auth-context:** upgrade react version ([0154b7b](https://github.com/disruptph/disruptjs/commit/0154b7b00d1f6f13b77256fed6f530a3ac7c933b))
+
+
+### BREAKING CHANGES
+
+* **react-auth-context:** upgraded react version and its type definition
+
+
+
+
+
 ## [1.1.8](https://github.com/disruptph/disruptjs/compare/@disruptph/react-auth-context@1.1.7...@disruptph/react-auth-context@1.1.8) (2021-07-22)
 
 **Note:** Version bump only for package @disruptph/react-auth-context
