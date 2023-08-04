@@ -34,10 +34,10 @@
     "url": "https://github.com/disruptph/disruptjs/issues"
   },
   "peerDependencies": {
-    "react": "^16.8 || ^17.0"
+    "react": "^18.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.14",
-    "react": "^17.0.2"
+    "@types/react": "^18.2.18",
+    "react": "^18.2.0"
   }
 }

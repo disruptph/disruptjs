@@ -39,6 +39,7 @@ export const useAuth = () => {
 
 interface Props {
   service: AuthService;
+  children: React.ReactNode;
 }
 
 export const AuthProvider: FC<Props> = ({ children, service }) => {
