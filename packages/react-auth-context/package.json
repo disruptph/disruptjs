@@ -1,6 +1,6 @@
 {
   "name": "@disruptph/react-auth-context",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A generic react auth context",
   "keywords": [
     "react",

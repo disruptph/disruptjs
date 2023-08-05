@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/disruptph/disruptjs/compare/@disruptph/react-auth-context@2.0.0...@disruptph/react-auth-context@2.0.1) (2023-08-05)
+
+
+### Bug Fixes
+
+* **react-auth-context:** fix peerDependency version ([69026b3](https://github.com/disruptph/disruptjs/commit/69026b320d4655fdb2d969b063086a9f3543700b))
+
+
+
+
+
 # [2.0.0](https://github.com/disruptph/disruptjs/compare/@disruptph/react-auth-context@1.1.8...@disruptph/react-auth-context@2.0.0) (2023-08-04)
 
 
